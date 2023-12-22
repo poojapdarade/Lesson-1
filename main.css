@@ -5,3 +5,11 @@ body{
     background-color: #f0ebeb;
     color: rgb(41, 17, 17);
 }
+
+table, tr,th, td, caption{
+    border: 1px solid #160707;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+
+}
