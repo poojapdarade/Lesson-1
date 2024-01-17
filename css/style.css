@@ -113,8 +113,34 @@ button {
 }
 
 .container {
-  border: 10px outset rgb(152, 205, 248);
+  border: 10px outset hsl(207, 87%, 78%);
   padding: 1.5rem;
   outline: 5px solid hsl(306, 57%, 82%);
   outline-offset: 5px;
+}
+
+.block {
+  width: 30vw;
+  height: 30vw;
+  background-color: #160707;
+  color: hsl(207, 87%, 78%);
+  padding: 1rem;
+}
+
+.left {
+  float: left;
+  margin-right: 1rem;
+}
+.right {
+  float: right;
+  margin-left: 1rem;
+}
+.clear {
+  clear: both;
+}
+section {
+  background-color: rgb(186, 217, 245);
+  border: 1px solid #333;
+  padding: 1rem;
+  overflow: auto;
 }
