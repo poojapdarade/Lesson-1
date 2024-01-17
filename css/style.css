@@ -1,87 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*html {
-    font-size: 22px
-}
-body{
-    background-color: #f0ebeb;
-    color: rgb(41, 17, 17);
-}
-*/
-table, tr,th, td, caption{
-    border: 1px solid #160707;
-    font-family: 'Courier New', 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-    padding: 0.5rem;
-
-}
-p{
-    font-size: 25px;
-    font-style: italic;
-    color:hsl(33, 92%, 15%);
-    text-align: justify;
-    line-height: 1.5;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.2rem;
-    font-family: 'Times New Roman', Times, serif;
+:root {
+  --link-color-when-point: hsl(204, 74%, 66%);
+  --link-background-when-point: hsl(196, 61%, 83%);
 }
 
-body{
-    background-color: hsl(209, 71%, 90%);
-    color: rgb(1, 1, 56);
-}
-h1{
-    border: 2px dashed green;
-    width: 400px;
-    padding: 1.5rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-    border: 10px outset rgb(152, 205, 248);
-    /*border-top: 5px solid blue;
-    border-right: 10px dashed green;
-    font-size: 1.5rem;
-    margin: 1.5rem;*/
-    padding: 1.5rem;
-    outline: 5px solid hsl(306, 57%, 82%);
-    outline-offset: 5px;
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  background-color: hsl(209, 71%, 90%);
+  color: rgb(1, 1, 56);
+}
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #160707;
+  font-family: "Courier New", "Courier New", Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+a {
+  color: hsl(207, 44%, 49%);
+}
+
+a:visited {
+  color: hsl(214, 71%, 60%);
+}
+a:hover,
+a:focus {
+  display: inline-block;
+  text-decoration: underline;
+  color: hsl(204, 74%, 66%);
+  background: hsl(196, 61%, 83%);
+}
+a:active {
+  color: hsl(219, 60%, 49%);
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+nav li {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: hsl(33, 92%, 15%);
+  background-color: hsl(201, 61%, 73%);
+  text-align: justify;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  width: 400px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+h2 {
+  padding: 1rem;
+  background-color: hsl(219, 83%, 82%);
+  border-radius: 2rem 2rem 0 0;
 }
 
 /* Typography is a way that the text is arranged and presented*/
-body{
-        padding: 5% 10%;
-        font-size: 1.5rem;
-        font-family: 'Times New Roman', Times, serif;
-}
-ol{
-    list-style-type: upper-alpha;
-}
-ul{
-    list-style: square;
-    color: hsl(240, 82%, 70%);
-}P
-input,button{
-    font: inherit;
+
+ol {
+  list-style-type: upper-alpha;
 }
 
-a{
-    /* Default styles text-decoration: none;
-    cursor: pointer;
-    color: blue;*/
-    color: hsl(207, 44%, 49%);
-
-}
-a:visited{
-    color: hsl(214, 71%, 60%);
-}
-a:hover, a:focus{
-    color:hsl(204, 74%, 66%);
-    background: hsl(196, 61%, 83%);
-}
-a:active{
-    color: hsl(219, 60%, 49%);
+li a {
+  display: block;
 }
 
+li a,
+li:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+li a:hover,
+li a:focus {
+  color: var(--link-color-when-point);
+  background: var(--link-background-when-point);
+}
+input,
+button {
+  font: inherit;
+}
+
+.container {
+  border: 10px outset rgb(152, 205, 248);
+  padding: 1.5rem;
+  outline: 5px solid hsl(306, 57%, 82%);
+  outline-offset: 5px;
+}
